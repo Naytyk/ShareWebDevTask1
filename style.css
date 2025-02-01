@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+#ham{
+    display: none;
+}
+
 nav {
     position: sticky;
     width: 100%;
@@ -80,40 +84,40 @@ nav {
     top: -10vh;
 }
 
-#cards img{
+#cards img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-.card{
+.card {
     display: flex;
 }
 
-.cardholders{
+.cardholders {
     margin: 2rem;
     margin-top: 1rem;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.cardhead{
+.cardhead {
     font-family: "Oswald", serif;
     font-size: 3rem;
     text-align: center;
 }
 
-.cardholders h4{
+.cardholders h4 {
     font-size: 1.5rem;
     margin: 0;
     text-align: center;
 }
 
-.cardholders p{
+.cardholders p {
     margin: 10px;
     text-align: center;
 }
 
-#about{
+#about {
     display: flex;
     margin: 100px;
     justify-content: center;
@@ -121,72 +125,274 @@ nav {
 
 }
 
-.abdetails{
- width: 60%;
- margin-left: 20px;
+.abdetails {
+    width: 60%;
+    margin-left: 20px;
 }
 
-.name{
+.name {
     font-family: "Oswald", serif;
     font-weight: bold;
     font-size: 4rem;
 
 }
 
-.abouttext{
+.abouttext {
     font-family: "Oswald", serif;
     font-weight: bold;
     font-size: 2rem;
 }
 
-.abouttextexpand{
+.abouttextexpand {
     font-family: "Oswald", serif;
 }
 
-.abimg img{
+.abimg img {
     height: 300px;
     border-radius: 10px;
 }
 
-#contacts{
+#contacts {
     background-color: black;
     color: white;
     padding: 30px;
     margin: 0;
 }
-.contacthead{
+
+.contacthead {
     font-family: "Oswald", serif;
     font-size: 3rem;
     /* text-align: center; */
 }
 
-.contactcontent{
+.contactcontent {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-.contactitem{
+
+.contactitem {
     display: flex;
     align-items: center;
     width: 80%;
     border-bottom: 1px solid white;
 }
 
-.contactitem img{
+.contactitem img {
     width: 30px;
     margin: 20px;
 }
 
-.nobtm{
+.nobtm {
     border-bottom: 0;
 }
 
-#footer{
+#footer {
     text-align: center;
     background-color: antiquewhite;
     margin: 0;
     padding: 1px;
     height: 100%;
     font-family: "Oswald", serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .back {
+        position: absolute;
+        z-index: -1;
+        height: 60vh;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .back img {
+        width: 110vw;
+        position: relative;
+        top: -8vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .back {
+        position: absolute;
+        z-index: -1;
+        height: 60vh;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .back img {
+        width: 120vw;
+        position: relative;
+        top: -8vh;
+    }
+
+    .cardholders {
+        margin: 1.5rem;
+        margin-top: 1rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .back {
+        position: absolute;
+        z-index: -1;
+        height: 60vh;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .back img {
+        width: 160vw;
+        position: relative;
+        top: -8vh;
+    }
+
+    .cardholders {
+        /* margin: 2rem; */
+        width: 60%;
+        margin-top: 2rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #li{
+        display: none;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ham{
+        display: block;
+    }
+
+    #ham img{
+        width: 30px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav img{
+        margin: 0 10px 0 10px;
+    }
+
+    #logo{
+        margin-left: 20px;
+    }
+
+    .abdetails {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #about{
+        margin: 80px;
+    }
+
+    .abtextexpand{
+        text-align: justify;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    .back {
+        position: absolute;
+        z-index: -1;
+        height: 60vh;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .back img {
+        width: 200vw;
+        position: relative;
+        top: -8vh;
+    }
+
+    .cardholders {
+        /* margin: 2rem; */
+        width: 80%;
+        margin-top: 2rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    .introtext{
+        font-size: 1.3rem;
+    }
+
+    #about{
+        margin: 60px;
+    }
+
+    #footer{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .back img {
+        width: 230vw;
+        position: relative;
+        top: -8vh;
+    }
+
+    .contactitem img {
+        width: 30px;
+        margin: 10px;
+    }
+
+    #footer{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .back img {
+        width: 270vw;
+        position: relative;
+        top: -8vh;
+    }
+
+    .contactitem img {
+        width: 30px;
+        margin: 10px;
+    }
+
+    .contactitem{
+        font-size: 0.8rem;
+    }
+
+    .contacthead{
+        font-size: 2.5rem;
+    }
+
+    #footer{
+        font-size: 0.6rem;
+    }
+
+    .abimg img {
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    #about{
+        margin: 40px;
+    }
 }
