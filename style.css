@@ -5,6 +5,11 @@ body {
 
 #ham{
     display: none;
+    z-index: 201;
+}
+
+#ham img{
+    z-index: 202;
 }
 
 nav {
@@ -195,6 +200,35 @@ nav {
     padding: 1px;
     height: 100%;
     font-family: "Oswald", serif;
+}
+
+#hammenu{
+    display: none;
+}
+
+#hammenu.active{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", serif;
+    transition: 0.3 ease;
+}
+
+#liham li{
+    text-decoration: none;
+    list-style: none;
+}
+
+#liham a{
+    text-decoration: none;
+    color: black;
 }
 
 @media only screen and (max-width: 900px) {
